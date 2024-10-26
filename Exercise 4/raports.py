@@ -10,15 +10,15 @@ script_path = os.path.dirname(os.path.abspath(__file__))
 
 
 # Load the previously saved CSV files From Exercise 1 Folder Gold
-top_rated_products = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-top-rated-products.csv"))
-low_rated_products = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-low-rated-products.csv"))
-popularity_vs_satisfaction = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-popularity-vs-satisfaction.csv"))
-yearly_avg_score = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-product-improvements-over-time.csv"))
-top_reviewers = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-top-reviewers.csv"))
-monthly_trends = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-seasonal-popularity.csv"))
-user_avg_score = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-consistency-in-user-ratings.csv"))
-helpfulness_analysis = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-helpfulness-ratio-analysis.csv"))
-yearly_trends = pd.read_csv(os.path.join(script_path, "Exercise 1", "Gold", "amazon-trend-analysis-over-time.csv"))
+top_rated_products = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-top-rated-products.csv"))
+low_rated_products = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-low-rated-products.csv"))
+popularity_vs_satisfaction = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-popularity-vs-satisfaction.csv"))
+yearly_avg_score = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-product-improvements-over-time.csv"))
+top_reviewers = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-top-reviewers.csv"))
+monthly_trends = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-seasonal-popularity.csv"))
+user_avg_score = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-consistency-in-user-ratings.csv"))
+helpfulness_analysis = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-helpfulness-ratio-analysis.csv"))
+yearly_trends = pd.read_csv(os.path.join(os.path.dirname(script_path), "Exercise 1", "Gold", "amazon-trend-analysis-over-time.csv"))
 
 
 # 1. Line Plots
